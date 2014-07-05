@@ -25,6 +25,7 @@ def index():
         o['typecase'] = request.form['typecase'].strip()
         o['casenumber'] = request.form['casenumber'].strip()
         o['casename'] = request.form['casename'].strip()
+        o['ordertype'] = request.form['ordertype'].strip()
         o['heardon'] = request.form['heardon'].strip()
         o['judgementdate'] = request.form['judgementdate'].strip()
         o['bench'] = request.form['bench'].strip()

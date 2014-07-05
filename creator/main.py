@@ -30,7 +30,7 @@ def index():
         o['bench'] = request.form['bench'].strip()
         o['padvocate'] = request.form['petitioner'].strip()
         o['oadvocate'] = request.form['opposite'].strip()
-
+        o['citation'] = request.form['citation'].strip()
         try:
            outstring = json.dumps(o,indent=4,sort_keys=True)
            filename = o['filename'][:-3] + 'json'
